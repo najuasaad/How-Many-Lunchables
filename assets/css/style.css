@@ -1,0 +1,75 @@
+body {
+    font-family: 'Cormorant', serif;
+    font-weight: 'bold';
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .lobster {
+    font-family: 'Lobster', cursive;
+    color: white;
+    font-size: 72px;
+    text-shadow: -4px 0 red, 0 4px red, 4px 0 red, 0 -4px red;
+  }
+
+  .lobsterTitle {
+    font-family: 'Lobster', cursive;
+    color: red;
+    font-size: 22px;
+  }
+
+  .lobsterOrder {
+    font-family: 'Lobster', cursive;
+    color: red;
+    font-size: 30px;
+  }
+
+  .gradhead {
+    background: #ff9a00;
+    background: linear-gradient(90deg, #ff8800 0%, #ffbb00 30%, #ffd900 100%);
+  }
+
+  #map{
+      max-width: 100%;
+  }
+
+  .repDrop {
+    font-family: 'Cormorant', serif;
+    line-height: 1;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #picLunch{
+    max-width: 80%;
+    height: auto;
+  }
+
+  p {
+    font-size: 28px;
+    max-width: 75%;
+    display: inline-block;
+  }
+
+  .available {
+    color: #0275d8;
+  }
+
+  .unavailable {
+    color: red;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .hiddenItem {
+    display: none;
+  }
+
+  .shownItem {
+    display: block;
+  }

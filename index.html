@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@600&family=Lobster&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Who's Bringing Snacks?</title>
+</head>
+<body>
+    <div class="container-fluid dots">
+        <div class="jumbotron jumbotron-fluid gradhead">
+            <div class="container ">
+                <h1 class="display-4 text-center lobster">How Many Lunchables?</h1>
+                <section class="lobsterTitle w-50 p-3 mx-auto text-center mt-1">An interactive experience to illustrate wealth distribution comparisons between elected officials and their constituents.</section>
+            </div>
+        </div>
+    </div> 
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mx-auto lobsterOrder mt-4">
+                <h2 class="text-center">First, choose your state:</h2>
+            </div>
+            <div class="col-12 mx-auto mb-3" id="map">
+                <div class="row">
+
+                </div>
+            </div>
+            <div class="mx-auto hiddenItem" id="repList">
+                <div class="mx-auto mt-5 mb-5">
+                    <h2 class="text-center lobsterOrder">Next, choose a representative:</h2>
+                    <div class="btn-group dropright text-center">
+                        <button class="btn btn-primary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                        
+                        </button>
+                        <div class="dropdown-menu">
+                        </div>
+                        <div id="repStatus">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="row">
+            <div id="itemChoice" class="col-12 container mx-auto hiddenItem">
+                <div class="mx-auto lobsterOrder mt-4">
+                    <h2 class="text-center">Now, choose an item:</h2>
+                </div>
+                <div class="row mx-auto" id="buttonHome">
+                    <div class="tile col-12 col-md-4 mx-auto p-2" id="tileOne">
+                        <button class="btn itemLunchable" id="itemLunchable"><img alt="Turkey and Cheddar Lunchables" id="picLunch" src="assets/pictures/lunchablepic.jpg" title="Lunchables"></button>
+                    </div>
+                    <div class="tile col-12 col-md-4 p-2 mx-auto" id="tileTwo">
+                        <button class="btn" id="itemTesla"><img alt="Tesla Model X" id="picTesla" src="assets/pictures/tesla_model_x.png" title="Tesla Model X"></button>
+                    </div>
+                    <div class="tile col-12 col-md-4 p-2 mx-auto" id="tileThree">
+                        <button class="btn" id="itemHouse"><img alt="House" id= "picHouse" src="assets/pictures/house.jpg" title="Median House by State"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="resultContainer" class="container col-12 mx-auto hiddenItem">
+                <div class="mx-auto lobsterOrder mt-4">
+                    <h2 class="text-center">How many lunchables?</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-12" id="chosenImage"></div>
+                    <div class="col-md-8 col-12 pt-3 pl-5" id="resultList">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class =" container row">
+            <div class="col-12 mx-auto">
+                <div class="mx-auto lobsterOrder mt-4">
+                    <h2 class="text-center">Recent searches:</h2>
+                </div>
+            </div>
+            <div class="row mx-md-n1" id="recentSearches">
+
+            </div>
+        </div>
+    </div>
+
+    <footer>Contributors: Eric Heltemes, Adam Natrop, Najua Saad <a href="sources.html">Sources</a></footer>
+    <script type="text/javascript" src="assets/html5usmapv4.0_branded/mapdata.js"></script>     
+    <script  type="text/javascript" src="assets/html5usmapv4.0_branded/usmap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="assets/js/costcomparison.js"></script>
+    <script src="assets/js/statenetworth.js"></script>
+    <script src="assets/js/api.js"></script>
+    <script src="assets/js/script_propagate.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/api.js"></script>
+</body>
+</html>
+
+<!-- sources:
+https://www.businessinsider.com/average-home-prices-in-every-state-washington-dc-2019-6#2-district-of-columbia-626911-50 for wash dc only 
+https://www.fool.com/the-ascent/research/average-house-price-state/ for avg house pricing
+https://www.lovemoney.com/ for avg net worth
+-->

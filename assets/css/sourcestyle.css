@@ -1,0 +1,22 @@
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+a {
+    color: black;
+    font-size: 18px;
+
+}
+
+a:hover {
+    color:red;
+    text-decoration: none;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 5px;
+    height: 1.5rem;
+  }
