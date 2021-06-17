@@ -1,4 +1,7 @@
-# us_representative_lunchables
+# HOW MANY LUNCHABLES
+
+## NOTE
+To view all of the commits and see how this project grew, visit the original project at https://github.com/erheltemes/us_representative_net_worth
 
 ## USER STORY
 ```
